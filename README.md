@@ -4,7 +4,7 @@ Python implementation of the [Digimon API by Shadow Smith](https://digimon-api.v
 
 ## Installation
 
-TODO
+`pip install pydigimon`
 
 ## Usage
 
@@ -14,3 +14,10 @@ client = DigimonClient()
 response = client.get_digimon_by_name("agumon")
 print(response.json())
 ```
+
+## Packaging
+
+To build package and publish to pypi:
+
+* `python3 -m build`
+* `python3 -m twine upload dist/*`
